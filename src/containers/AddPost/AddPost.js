@@ -4,18 +4,18 @@ import {useState} from "react";
 import './Addpost.css'
 
 
-const AddPost = () => {
+const AddPost = ({history}) => {
     const [data, setData] =  useState({
         title: '',
         text: '',
         datetime: new Date(),
     });
 
-
     const sendPosts = async e => {
         e.preventDefault();
         try{
             await axios.post("https://annieversary-d3dfb-default-rtdb.europe-west1.firebasedatabase.app/posts.json",data);
+            history.replace('/');
         } catch (error) {
             alert("Что-то пошло не так...");
         }
@@ -29,6 +29,7 @@ const AddPost = () => {
         }));
     };
 
+
     return (
         <div className='formPost'>
            <h3>Add new post:</h3>
@@ -37,10 +38,8 @@ const AddPost = () => {
                 <input required type="text" name="title" className="postInput" value={data.title} onChange={changeMessage} placeholder="Введите ваше сообщение..." />
                 <p>Description:</p>
                 <textarea required name="text" value={data.text} onChange={changeMessage} placeholder='Введите ваше сообщение...'></textarea>
-                <p> <button type="submit" className="sendBtn">Send Post</button></p>
+                <p> <button type="submit" className="sendBtn" >Send Post</button></p>
             </form>
-
-
         </div>
     );
 };

@@ -2,35 +2,50 @@ import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import './FullPost.css';
 import dayjs from "dayjs";
+import {NavLink} from "react-router-dom";
 
-
-const FullPost = ({match, datetime}) => {
+const FullPost = ({match, history}) => {
     const [postCard,setPostCard] = useState(null);
 
     useEffect(() => {
         const fetchData = async() => {
-            const response = await axios(`https://annieversary-d3dfb-default-rtdb.europe-west1.firebasedatabase.app/posts/${match.params.id}.json`);
-            setPostCard(response.data);
-
+            let post = {};
+            try {
+                const response = await axios(`https://annieversary-d3dfb-default-rtdb.europe-west1.firebasedatabase.app/posts/${match.params.id}.json`);
+                console.log(response.data);
+                Object.keys(response.data).map(key => {
+                    if (key === 'datetime') {
+                        response.data[key] = dayjs(response.data[key]).format('DD.MM.YYYY | HH:mm:ss');
+                    }
+                    return post[key] = response.data[key];
+                });
+                setPostCard(post);
+            } catch (error) {
+                alert("Что-то пошло не так...");
+            }
         };
-        fetchData().catch(console.error);
-    });
+        fetchData().catch(e => console.log(e));
+        },[match.params.id]);
+
+
+    const deletePost = async () => {
+         await axios.delete(`https://annieversary-d3dfb-default-rtdb.europe-west1.firebasedatabase.app/posts/${match.params.id}.json`);
+         history.replace('/');
+    };
 
 
     return postCard && (
             <div className='fullPost'>
                 <h3>More information about your post:</h3>
                 <div className='post-info'>
-                    {Object.keys(postCard).map(key => (
-                        <p>{postCard[key]} </p>
-                    ))
-                    };
+                    <p>{postCard.datetime}</p>
+                    <p>{postCard.title}</p>
+                    <p>{postCard.text}</p>
                 </div>
                 <div className="buttons">
-                    <button className='delete-btn'>Delete</button>
-                    <button className='edit-btn'>Edit</button>
+                    <button className='delete-btn' onClick={deletePost}>Delete</button>
+                    <NavLink className="edit-btn" to={`/posts/${match.params.id}/edit`}>Edit</NavLink>
                 </div>
-
             </div>
         );
 

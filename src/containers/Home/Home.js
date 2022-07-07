@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import Post from "../Post/Post";
-import dayjs from "dayjs";
 
 const Home = () => {
     const [posts, setPosts] = useState([]);
@@ -19,7 +18,7 @@ const Home = () => {
                         datetime: key[1].datetime,
                     });
                 }
-                setPosts(postsArray);
+                setPosts(postsArray.reverse());
             }
             catch (error) {
                 alert("Что-то пошло не так...");

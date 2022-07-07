@@ -1,27 +1,34 @@
 
-
 .formPost{
     margin-left: 20%;
+    margin-top: 40px;
 }
 
 .formPost input{
     width: 70%;
     border-radius: 5px;
-    border: 2px solid #78b4c7;
+    border: none;
     margin-top: -5px;
     margin-bottom: 15px;
+    min-height: 50px;
+    padding: 0 15px;
 }
 .formPost textarea{
     border-radius: 5px;
-    border: 2px solid #78b4c7;
+    border: none;
     width: 70%;
-    height: 100px;
+    min-height: 120px;
+    padding: 10px 15px;
 }
 
 .sendBtn{
-    padding: 5px 8px;
-    margin-top: 5px;
+    margin-top: 10px;
+    background: #6cb0d9;
+    padding: 8px 15px;
     border-radius: 5px;
-    border: 2px solid #78b4c7;
-    background: #dcf0f8;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: none;
+    color: #ffffff;
+    box-shadow: #313336 2px 3px 5px 0;
 }

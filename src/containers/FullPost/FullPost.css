@@ -6,7 +6,7 @@
     color: #313336;
 }
 .post-info{
-    min-width: 600px;
+    width: 600px;
     min-height: 300px;
     padding: 15px 20px;
     border-radius: 5px;
@@ -29,9 +29,11 @@
 }
 
 .edit-btn{
-    padding: 4px 14px;
-    min-width: 90px;
+    padding: 7px 28px;
+    min-width: 100px;
     border: none;
     background: #6cb0d9;
     border-radius: 3px;
+    text-decoration: none;
+    color: black;
 }
