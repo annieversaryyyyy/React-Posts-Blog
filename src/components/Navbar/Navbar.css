@@ -1,25 +1,17 @@
-/*.navbar{*/
-/*    display: flex;*/
-/*    margin-left: 30px;*/
-/*}*/
-/*.navbar h2{*/
-/*    margin-right: 60%;*/
-
-/*}*/
-/*.navbar li {*/
-/*    display: inline;*/
-/*    margin-right: 10px;*/
-
-/*}*/
+.header-nav{
+    background: black;
+    color: white;
+}
 
 
 a{
-    margin-right: 20px;
+    margin-right: 60px;
     text-decoration: none;
+    color: white;
 }
 
 ul {
-    margin-left: 70%;
+    margin-left: 50%;
 }
 
 

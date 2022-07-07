@@ -1,0 +1,25 @@
+.post-cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    background: #d9dce0;
+}
+
+.post{
+    border: 1px solid #313336;
+    min-width: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 15px 15px;
+    background: #f1f3f5;
+}
+
+.link-read{
+    border: 1px #55575e solid;
+    background: #6cb0d9;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+}

@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import AddPost from "../AddPost/AddPost";
 import axios from "axios";
 import Post from "../Post/Post";
 
@@ -35,18 +34,20 @@ const Home = () => {
     console.log(posts)
 
     return (
-        <div>
-            {posts.map((post) => (
-                <Post
-                    key={post.id}
-                    id={post.id}
-                    title={post.title}
-                    text={post.text}
-                    datetime={post.datetime}
-                />
-            ))}
+        <>
+            <div className='post-cards'>
+                {posts.map((post) => (
+                    <Post
+                        key={post.id}
+                        id={post.id}
+                        title={post.title}
+                        text={post.text}
+                        datetime={post.datetime}
+                    />
+                ))}
+            </div>
+        </>
 
-        </div>
     );
 };
 
