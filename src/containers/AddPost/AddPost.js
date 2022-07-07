@@ -34,9 +34,9 @@ const AddPost = () => {
            <h3>Add new post:</h3>
             <form onSubmit={sendPosts}>
                 <p>Title:</p>
-                <input type="text" name="title" className="postInput" value={data.title} onChange={changeMessage} placeholder="Введите ваше сообщение..." />
+                <input required type="text" name="title" className="postInput" value={data.title} onChange={changeMessage} placeholder="Введите ваше сообщение..." />
                 <p>Description:</p>
-                <textarea name="text" value={data.text} onChange={changeMessage} placeholder='Введите ваше сообщение...'></textarea>
+                <textarea required name="text" value={data.text} onChange={changeMessage} placeholder='Введите ваше сообщение...'></textarea>
                 <p> <button type="submit" className="sendBtn">Send Post</button></p>
             </form>
 
