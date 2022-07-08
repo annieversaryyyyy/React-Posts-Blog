@@ -1,0 +1,210 @@
+.u-section-3 .u-sheet-1 {
+    min-height: 889px;
+}
+
+.u-section-3 .u-shape-1 {
+    height: 596px;
+    margin-top: 70px;
+    margin-bottom: 0;
+    background-image: linear-gradient(#fbeced, #adcce9);
+    margin-top: -20px;
+}
+
+.u-section-3 .u-text-1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.75rem;
+    margin: -529px auto 0;
+}
+.cards{
+    margin-top: -20px;
+}
+
+.u-section-3 .u-list-1 {
+    width: 1033px;
+    margin: 48px auto 0;
+}
+
+.u-section-3 .u-repeater-1 {
+    grid-template-columns: repeat(3, calc(33.3333% - 22px));
+    min-height: 515px;
+    grid-gap: 33px;
+}
+
+.u-section-3 .u-list-item-1 {
+    box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.15);
+}
+
+.u-section-3 .u-container-layout-1 {
+    padding: 30px 25px;
+}
+
+.u-section-3 .u-text-2 {
+    font-size: 1.25rem;
+    margin: 0 auto 0 0;
+}
+
+.u-image, .u-background-effect-image, .u-video-poster {
+    object-fit: cover;
+    display: block;
+    vertical-align: middle;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.u-image-circle.u-image {
+    border-radius: 50% !important;
+}
+
+.u-section-3 .u-text-3 {
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 40px auto 0 0;
+}
+
+.u-section-3 .u-text-4 {
+    margin: 14px auto 0 0;
+}
+
+.u-section-3 .u-list-item-2 {
+    background-image: none;
+    box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.15);
+}
+
+.u-section-3 .u-container-layout-2 {
+    padding: 30px 25px;
+}
+
+.u-section-3 .u-text-5 {
+    font-size: 1.25rem;
+    margin: 0 auto 0 0;
+}
+
+.u-radius-20, .u-radius-20:before, .u-radius-20 .u-background-effect, .u-radius-20:not(.u-hover-box) > .u-container-layout {
+    border-radius: 20px !important;
+}
+.u-section-3 .u-container-layout-1 {
+    padding: 30px 25px;
+}
+
+.u-valign-top {
+    justify-content: flex-start;
+}
+
+.u-list:not(.u-repeater) .u-repeater, .u-blog:not(.u-repeater) .u-repeater, .u-products:not(.u-repeater) .u-repeater {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+.u-section-3 .u-repeater-1 {
+    grid-template-columns: repeat(3, calc(33.3333% - 22px));
+    min-height: 515px;
+    grid-gap: 33px;
+}
+.u-repeater {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33333333%);
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+.user {
+    display: block;
+}
+.u-sheet:not(.u-image):not(.u-video) > * {
+    pointer-events: initial;
+}
+.u-sheet:not(.u-image):not(.u-video) {
+    pointer-events: none;
+}
+.u-align-center {
+    text-align: center;
+}
+.u-body {
+    --theme-sheet-width-xl: 1140px;
+    --theme-sheet-width-lg: 940px;
+    --theme-sheet-width-md: 720px;
+    --theme-sheet-width-sm: 540px;
+    --theme-sheet-width-xs: 340px;
+}
+.u-body {
+    color: #111111;
+    background-color: #ffffff;
+    --effect-scale: 1.1;
+}
+
+
+.u-section-3 .u-text-6 {
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 40px auto 0 0;
+}
+
+.u-section-3 .u-text-7 {
+    margin: 14px auto 0 0;
+}
+
+.u-section-3 .u-list-item-3 {
+    box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.15);
+}
+
+.u-section-3 .u-container-layout-3 {
+    padding: 30px 25px;
+}
+
+.u-section-3 .u-text-8 {
+    font-size: 1.25rem;
+    margin: 0 auto 0 0;
+}
+
+.u-section-3 .u-text-9 {
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin: 40px auto 0 0;
+}
+
+.u-section-3 .u-text-10 {
+    margin: 14px auto 0 0;
+}
+
+.u-section-3 .u-text-11 {
+    margin: 25px auto 63px;
+}
+
+.u-section-3 .u-btn-1 {
+    border-style: none none solid;
+    padding: 0;
+}
+
+.u-section-3 .u-image-1 {
+    width: 147px;
+    height: 147px;
+    background-image: url("../../assets/hgghgh.jpg");
+    background-position: 50% 50%;
+    margin: 69px 173px 0 61px;
+}
+
+.u-section-3 .u-image-2 {
+    width: 147px;
+    height: 147px;
+    background-image: url("../../assets/ds.jpg");
+    background-position: 50% 50%;
+    margin: 69px 173px 0 61px;
+}
+
+.u-section-3 .u-image-3 {
+    width: 147px;
+    height: 147px;
+    background-image: url("../../assets/fgfg.jpg");
+    background-position: 50% 50%;
+    margin: 69px 173px 0 61px;
+}
+
+
