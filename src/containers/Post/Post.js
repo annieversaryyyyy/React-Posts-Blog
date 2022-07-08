@@ -6,7 +6,7 @@ import dayjs from "dayjs";
 const Post = ({title, datetime, id}) => {
 
     if (datetime){
-        datetime = dayjs(datetime).format('DD.MM.YYYY | HH:mm:ss')
+        datetime = dayjs(datetime).format('DD.MM.YYYY | HH:mm:ss');
     }
 
     return (

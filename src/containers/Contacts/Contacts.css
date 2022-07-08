@@ -1,0 +1,63 @@
+
+.u-section-7 .u-shape-1 {
+    height: 477px;
+    background-image: linear-gradient(#fbeced, #adcce9);
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 20px;
+}
+
+.u-section-7 .u-layout-wrap-1 {
+    width: 1140px;
+    margin: -390px auto 60px;
+}
+
+.u-section-7 .u-layout-cell-1 {
+    min-height: 738px;
+}
+
+.cont-info{
+    display: block;
+    padding: 30px 30px;
+    width: 210px;
+}
+
+.card-contacts{
+    background: white;
+}
+
+.u-section-7 .u-container-layout-1 {
+    box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.15);
+    padding: 30px;
+}
+
+
+@media (max-width: 1199px) {
+    .u-section-7 {
+        min-height: 736px;
+    }
+
+    .u-section-7 .u-layout-wrap-1 {
+        width: 940px;
+    }
+
+    .u-section-7 .u-layout-cell-1 {
+        min-height: 609px;
+    }
+
+    .u-section-7 .u-text-2 {
+        font-size: 1.875rem;
+    }
+
+    .u-section-7 .u-social-icons-1 {
+        width: 195px;
+    }
+
+    .u-section-7 .u-layout-cell-2 {
+        min-height: 609px;
+    }
+}
+
+
+
+

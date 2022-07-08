@@ -15,7 +15,6 @@ const FullPost = ({match, history}) => {
             setLoading(true);
             try {
                 const response = await axios(`https://annieversary-d3dfb-default-rtdb.europe-west1.firebasedatabase.app/posts/${match.params.id}.json`);
-                console.log(response.data);
                 Object.keys(response.data).map(key => {
                     if (key === 'datetime') {
                         response.data[key] = dayjs(response.data[key]).format('DD.MM.YYYY | HH:mm:ss');
@@ -53,13 +52,9 @@ const FullPost = ({match, history}) => {
                     <button className='delete-btn' onClick={deletePost}>Delete</button>
                     <NavLink className="edit-btn" to={`/posts/${match.params.id}/edit`}>Edit</NavLink>
                 </div>
-
             </div>
         );
     }
-
-
-
 };
 
 export default FullPost;

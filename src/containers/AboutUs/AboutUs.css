@@ -178,17 +178,17 @@
     margin: 25px auto 63px;
 }
 
-.u-section-3 .u-btn-1 {
-    border-style: none none solid;
-    padding: 0;
-}
 
 .u-section-3 .u-image-1 {
     width: 147px;
     height: 147px;
     background-image: url("../../assets/hgghgh.jpg");
     background-position: 50% 50%;
-    margin: 69px 173px 0 61px;
+    margin: 69px 173px 0 50px;
+}
+
+.card-body{
+    background: #ffffff;
 }
 
 .u-section-3 .u-image-2 {
@@ -196,7 +196,7 @@
     height: 147px;
     background-image: url("../../assets/ds.jpg");
     background-position: 50% 50%;
-    margin: 69px 173px 0 61px;
+    margin: 69px 173px 0 50px;
 }
 
 .u-section-3 .u-image-3 {
@@ -204,7 +204,7 @@
     height: 147px;
     background-image: url("../../assets/fgfg.jpg");
     background-position: 50% 50%;
-    margin: 69px 173px 0 61px;
+    margin: 69px 173px 0 50px;
 }
 
 
